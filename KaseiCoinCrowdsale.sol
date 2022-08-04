@@ -51,9 +51,9 @@ contract KaseiCoinCrowdsaleDeployer {
         kasei_token_address = address(token);
 
         // Create a new instance of the `KaseiCoinCrowdsale` contract
-        KaseiCoinCrowdsale kasei_crowdsale = new KaseiCoinCrowdsale (1, wallet, token, goal, now, now + 24 weeks);
+        //KaseiCoinCrowdsale kasei_crowdsale = new KaseiCoinCrowdsale (1, wallet, token, goal, now, now + 24 weeks);
 
-        //KaseiCoinCrowdsale kasei_crowdsale = new KaseiCoinCrowdsale (1, wallet, token);
+        KaseiCoinCrowdsale kasei_crowdsale = new KaseiCoinCrowdsale (1, wallet, token);
             
         // Aassign the `KaseiCoinCrowdsale` contract’s address to the `kasei_crowdsale_address` variable.
         kasei_crowdsale_address = address(kasei_crowdsale);
