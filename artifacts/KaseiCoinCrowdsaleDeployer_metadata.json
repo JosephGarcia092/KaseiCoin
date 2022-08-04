@@ -1,39 +1,16 @@
 {
 	"compiler": {
-		"version": "0.5.17+commit.d19bba13"
+		"version": "0.5.5+commit.47a71e8f"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
-			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "name",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "symbol",
-						"type": "string"
-					},
-					{
-						"internalType": "address payable",
-						"name": "wallet",
-						"type": "address"
-					}
-				],
-				"payable": false,
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
 			{
 				"constant": true,
 				"inputs": [],
 				"name": "kasei_crowdsale_address",
 				"outputs": [
 					{
-						"internalType": "address",
 						"name": "",
 						"type": "address"
 					}
@@ -48,7 +25,6 @@
 				"name": "kasei_token_address",
 				"outputs": [
 					{
-						"internalType": "address",
 						"name": "",
 						"type": "address"
 					}
@@ -56,6 +32,25 @@
 				"payable": false,
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"name": "symbol",
+						"type": "string"
+					},
+					{
+						"name": "wallet",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
 			}
 		],
 		"devdoc": {
@@ -69,7 +64,7 @@
 		"compilationTarget": {
 			"KaseiCoinCrowdsale.sol": "KaseiCoinCrowdsaleDeployer"
 		},
-		"evmVersion": "istanbul",
+		"evmVersion": "petersburg",
 		"libraries": {},
 		"optimizer": {
 			"enabled": false,
@@ -79,108 +74,93 @@
 	},
 	"sources": {
 		"KaseiCoin.sol": {
-			"keccak256": "0xebaf70349c092b54fc242ef5ad4a32385df89cf35bb5db0e81ed883c0e5bc43b",
+			"keccak256": "0x7a915a643395370d6f6d8603f7ef434fedba4236d1feed6454aa65153115c97b",
 			"urls": [
-				"bzz-raw://4c9235a49c7cf9fd425b78110e5e2bad3c6786b74d1a5536ac0bf6d3a54c8292",
-				"dweb:/ipfs/QmThQzoFyrUD5ibgij2tkD7YgLSmQnVJZ4UNF1JnpH5wD5"
+				"bzzr://2983550e2a6f361fc9097afc2511100beba7fb8f211dc0cb4eec62ca82ba976c"
 			]
 		},
 		"KaseiCoinCrowdsale.sol": {
-			"keccak256": "0x4432e19b9af195c1c2305e3a79f514ffff53920909308e6ea3f4de94e3ca941e",
+			"keccak256": "0x2e7d6c10af882139b91ae6b5128036883b7f842fc2574209907a2d8f2f68e005",
 			"urls": [
-				"bzz-raw://6321ea3887e091213bb3ff3d6cd11dd36fa0e0734ce2a48effca80a5bf735827",
-				"dweb:/ipfs/QmYbbxk9f6ZqjdvvDhEsUaPjJbdA6NwgUNd2PzmzE52i3j"
+				"bzzr://492e161a9ad7d73d9cba688910d9fd21d9da06ff168b31186f4191787e38c175"
 			]
 		},
 		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/GSN/Context.sol": {
 			"keccak256": "0x90a3995645af7562d84b9d69363ffa5ae7217714ab61e951bf7bc450f40e4061",
 			"urls": [
-				"bzz-raw://216ef9d6b614db4eb46970b4e84903f2534a45572dd30a79f0041f1a5830f436",
-				"dweb:/ipfs/QmNPrJ4MWKUAWzKXpUqeyKRUfosaoANZAqXgvepdrCwZAG"
+				"bzzr://51482c01bddf23793bddee43b60ab9578a62948a4f2082def24ea792a553b055"
 			]
 		},
 		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/access/Roles.sol": {
 			"keccak256": "0xb002c378d7b82a101bd659c341518953ca0919d342c0a400196982c0e7e7bcdb",
 			"urls": [
-				"bzz-raw://00a788c4631466c220b385bdd100c571d24b2deccd657615cfbcef6cadf669a4",
-				"dweb:/ipfs/QmTEwDbjJNxmMNCDMqtuou3dyM8Wtp8Q9NFvn7SAVM7Jf3"
+				"bzzr://bd34c1ce05b5b2b3a62fc02e160f6805b1cadd476854664f433c685b2fda8dad"
 			]
 		},
 		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/access/roles/MinterRole.sol": {
 			"keccak256": "0xbe8eef6f2cb4e427f5c5d8a76865ccd06e55a4f1d6671ba312d45bfa705aedbf",
 			"urls": [
-				"bzz-raw://badf338a5e22c8658c01fe2ce89b487d9dbf6d2d9d5eb49df7415383e2498765",
-				"dweb:/ipfs/QmP5aMkvFwMJyuQjKE8ADh5tkWYqonb4KjgkAjgYEVVFAv"
+				"bzzr://946a26eebf5d294534471d07c4dc449ce3123e9fc2994bdfcd99dff1d09cc1af"
 			]
 		},
 		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/crowdsale/Crowdsale.sol": {
 			"keccak256": "0xe612eb8a3023c1a4f4d7e2d0aaf7f19c25e9d772c46a6e95790ddb42ba7baa99",
 			"urls": [
-				"bzz-raw://8b2bba5f74117ed67570e3b73bbd3ff51153275a0fcefe34df964ccba92ae028",
-				"dweb:/ipfs/QmWZF4DnkWZZYzVHz8pAxbLFRxmNiKWE2n1Chd4w2rXWYh"
+				"bzzr://3f11e0277a173ba437a448df0f1ab16a64b1b1dcd3f34019e052a7c5d14c1ea7"
 			]
 		},
 		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/crowdsale/emission/MintedCrowdsale.sol": {
 			"keccak256": "0x343249b95ade6a20737b7f681a05a257f14a39b21043ff2e31d8e5d861d83777",
 			"urls": [
-				"bzz-raw://ace82fde631b4c630223282ec488c53adf0c53beb99a972736dea0a37351d55c",
-				"dweb:/ipfs/QmdyGt7hjQ3D6JFr1HRaqa2xjS3EZGFomnwsqfjKHckcqx"
+				"bzzr://3a53c6bbb534d2f038289952e35a75bb572f5998582b1d47827907f027dd7fb4"
 			]
 		},
 		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/math/SafeMath.sol": {
 			"keccak256": "0x640b6dee7a4b830bdfd52b5031a07fc2b12209f5b2e29e5d364a7d37f69d8076",
 			"urls": [
-				"bzz-raw://31113152e1ddb78fe7a4197f247591ca894e93f916867beb708d8e747b6cc74f",
-				"dweb:/ipfs/QmbZaJyXdpsYGykVhHH9qpVGQg9DGCxE2QufbCUy3daTgq"
+				"bzzr://292843005e754e752644f767477ec5ad7a1ffc91ddb18c38b8079c62f3993cad"
 			]
 		},
 		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC20/ERC20.sol": {
 			"keccak256": "0xb15af804e2bc97db51e4e103f13de9fe13f87e6b835d7a88c897966c0e58506e",
 			"urls": [
-				"bzz-raw://1e8cff8437557fc915a3bed968fcd8f2df9809599e665ef69c2c9ce628548055",
-				"dweb:/ipfs/QmP5spYP8vs2jvLF8zNrXUbqB79hMsoEvMHiLcBxerWKcm"
+				"bzzr://6200c125af376381ae6c5415b8f3c1cb83889be20a7a51d67ac607487a10313b"
 			]
 		},
 		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC20/ERC20Detailed.sol": {
 			"keccak256": "0x4a3a810b7ebe742e897e1fd428b3eeed2196d3acea58eaf9c566ed10d545d2ed",
 			"urls": [
-				"bzz-raw://28d03f328e19e4099d5013de0649afaeaabac1a614e130767ab1cb4aca9775b6",
-				"dweb:/ipfs/Qmb9iW7yNuYehB2NfhRMs9TakqbLVQhBhmGMkaDZ5g1Eb4"
+				"bzzr://729aefb3f89f616c954a0735f8b4dd8804bdd0351e96f8e904fdb3e78a109b6c"
 			]
 		},
 		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC20/ERC20Mintable.sol": {
 			"keccak256": "0xa2b957cf89692c504962afb7506999155f83385373f808243246cd5879de5940",
 			"urls": [
-				"bzz-raw://c44ae0ad1bce141c33b962f8b4e9228bdf8df36c8ac363b4f0bf9498b8bfc32a",
-				"dweb:/ipfs/QmcSBRdFwVvy2wFZrBwo5cvqNP4UHh9Eyzf8jnxBgnPqfe"
+				"bzzr://812521b94ef1bd30b0a93e14a97a0e79e2bf4cb607aa47c21c8177966a79fd1a"
 			]
 		},
 		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC20/IERC20.sol": {
 			"keccak256": "0xe5bb0f57cff3e299f360052ba50f1ea0fff046df2be070b6943e0e3c3fdad8a9",
 			"urls": [
-				"bzz-raw://59fd025151435da35faa8093a5c7a17de02de9d08ad27275c5cdf05050820d91",
-				"dweb:/ipfs/QmQMvwEcPhoRXzbXyrdoeRtvLoifUW9Qh7Luho7bmUPRkc"
+				"bzzr://cf2d583b8dce38d0617fdcd65f2fd9f126fe17b7f683b5a515ea9d2762d8b062"
 			]
 		},
 		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC20/SafeERC20.sol": {
 			"keccak256": "0x6f2c9955d65c522b80f4b8792f076512d2df947d2112cbc4d98a4781ed42ede2",
 			"urls": [
-				"bzz-raw://7d8ec81683520c06baeef3f7e06cd82bd6fd5fa611f26857f475f6c829540aff",
-				"dweb:/ipfs/QmTDkFzKnrpiV1UKnSoiZAHPuguWzokrr4pFbSPvyaSo56"
+				"bzzr://d2ff5aadcb697bc27ca3b0f6c40b4998e8cf0a1bd0f761d1df6d5981777841ae"
 			]
 		},
 		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/utils/Address.sol": {
 			"keccak256": "0x1a8e5072509c5ea7365eb1d48030b9be865140c8fb779968da0a459a0e174a11",
 			"urls": [
-				"bzz-raw://03335b7b07c7c8c8d613cfdd8ec39a0b5ec133ee510bf2fe6cc5a496767bef4b",
-				"dweb:/ipfs/Qmebp4nzPja645c9yXSdJkGq96oU3am3LUnG2K3R7XxyKf"
+				"bzzr://4e1d23731da27602b8c552e54fb9976dadf8cf46a8f90a3c8c1b85fe044618b9"
 			]
 		},
 		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/utils/ReentrancyGuard.sol": {
 			"keccak256": "0xb63221b23818d622bfd83d18e0968307e4fcb7a35536bdceded76e1cf8349acd",
 			"urls": [
-				"bzz-raw://44e1e8c22362c4708a8c3362735f1465f5b05e2f7315e16c7010d694ce019d73",
-				"dweb:/ipfs/QmWj9g8X1hxkXRre2kwkEjLBetjuzmSbWHD81bsSojnBkS"
+				"bzzr://35ed82f3c1174e1eb7d9ef351964024e535a992a5dbf4ff125a101aef441fd16"
 			]
 		}
 	},
